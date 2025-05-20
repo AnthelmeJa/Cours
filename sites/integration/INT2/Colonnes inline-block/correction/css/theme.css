@@ -1,0 +1,29 @@
+section {
+    padding: 1em;
+    background-color: white;
+    margin-bottom: 2em;
+}
+
+.parent {
+    padding: 1em;
+	border: 2px dashed #DD5735;
+}
+
+.card {
+    display: inline-block;
+    width: 50%;
+    border: 1px solid #444;
+    padding: 1em;
+}
+
+.hack-css {
+    font-size: 0;
+    padding: 1rem;
+}
+.card {
+    font-size: initial;
+}
+
+.valign {
+    vertical-align: top;
+}

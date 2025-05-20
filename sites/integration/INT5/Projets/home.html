@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    
+    <script> 
+      function rain() {    
+       let amount = 250;
+     let body = document.querySelector('body');
+     let i = 1;
+     while(i < amount){
+        let drop = document.createElement('i');
+        let size = Math.random() * 5;
+        let posX = Math.floor(Math.random() * window.innerWidth);
+        let delay = Math.random() * -20;
+        let duration = Math.random() * 5;
+
+        drop.style.left = posX + 'px';
+        drop.style.animationDelay = delay+'s';
+        drop.style.animetionDuration = 1 + duration + 's';
+        body.appendChild(drop);
+        i++;
+       }
+     }
+     rain();
+     
+        
+    </script>
+     
+<header> 
+    
+    <div class="header1"> 
+        <div class="logoh1">
+        <img id="logo" class="logo" src="images/logo1.png" alt="Logo" class="logo">    
+        <h1>FUTURE CITY</h1>
+         </div>
+
+         <div class="falling-suns">
+            <div class="sun"><img src="images/sun1.png" alt="sun"></div>
+            <div class="sun"><img src="images/sun2.png" alt="sun"></div>
+            <div class="sun"><img src="images/sun33.png" alt="sun"></div>
+            <div class="sun"><img src="images/sun1.png" alt="sun"></div>
+            <div class="sun"><img src="images/sun2.png" alt="sun"></div>
+            <div class="sun"><img src="images/sun33.png" alt="sun"></div>
+          </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="evenement.html">Evenements</a></li>
+                <li><a href="billeterie.html">Billeterie</a></li>                
+            </ul>           
+        </nav>        
+    </div>
+</header>
+
+    <main class="container">
+    <h2> En ce moment </h2>
+
+        
+        <ul class="bxslider">
+        <li><img src="images/noel2_1.png"></li>
+        <li><img src="images/lapin.png_3.png"></li>
+        <li><img src="images/halloween-davyd.png"></li>
+        </ul>
+    <div>
+
+  <marquee behavior="scroll" direction="left" class="marquee">
+    Bienvenue dans le cœur néon du futur, où les rêves des années 80 deviennent réalité. 
+    La ville a été fondée en 2084 par un groupe de cyber-romantiques fatigués de l'ennuyeuse réalité</marquee>
+
+ 
+
+
+ <section class="bg-event">
+    <div class="container-event"> 
+          <h2> Evenements a venir </h2>
+      <button class="button-voir"><a href="evenement.html">voir plus</a></button>
+    </div>
+ </section>
+
+
+
+
+</main>
+<footer class="footer">
+
+
+
+    <div class="footer2"> 
+    <div class="footer-section">
+        <h3 class="neon-text">Contact</h3>
+        <ul>
+
+          <li class="neon-text">✉ contact@neonville.future</li>
+          <li class="neon-text">📠 Fax hors service depuis 2077</li>
+          <li class="neon-text">📍 Rennes, France</li>
+          <li class="neon-text">🏙️ 4 Rue des Châteaux du Futur</li>
+        </ul>
+      </div>
+
+     <div class="footer-section">
+        <div class="footer-text">
+        <p> Welcome to the neon heart of the future, where dreams of the 80s come true. The city was founded in 2084 by a group of cyber-romantics tired of boring reality.</p>
+    </div>
+     </div>
+
+      <div class="footer-section">
+        <h3 class="neon-text">Coordonnées (fictives)</h3>
+        <ul>
+          <li class="neon-text">📡 Latitude : 47.1984° N</li>
+          <li class="neon-text">🛰️ Longitude : -1.3085° W</li>
+          <li class="neon-text flicker">💡 Ne débranchez jamais le néon</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+<!-- BX SLIDER BX SLIDERBX SLIDERBX SLIDERBX SLIDERBX SLIDERBX SLIDERBX SLIDERBX SLIDERBX SLIDER-->
+                        <script>
+  $('.bxslider').bxSlider({
+    pagerCustom: '#bx-pager'
+  });
+                        </script>
+
+
+<!-- MUSIC MUSIC MUSIC MUSIC MUSIC MUSIC MUSIC MUSIC-->
+<audio id="music" autoplay loop>
+    <source src="music/Timecop1983 - On the Run.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    const audio = document.getElementById("music");
+    const toggleBtn = document.getElementById("logo");
+
+    audio.volume = 0.1;
+
+    toggleBtn.addEventListener("click", function () {
+        if (audio.paused) {
+            audio.play().catch(e => console.log("ERROR", e));
+        } else {
+            audio.pause();
+        }
+    });
+</script>
+
+
+</body> 
+</html>

@@ -1,0 +1,52 @@
+.container {
+    background-color: white;
+}
+
+p{
+    margin-bottom:2em;
+    color: black;
+}
+
+.button{
+    color: white;
+    padding: 1em;
+}
+
+
+/* ///
+button color /// */
+.button0 {
+    background-color: black;
+}
+
+.button1 {
+    background-color: grey;
+}
+.button2 {
+    background-color: red;
+}
+.button3 {
+    background-color: darkblue;
+}
+.button4 {
+    background-color: red;
+}
+
+/* ///
+button pseudo-class /// */
+.button1:visited{
+    color:red;
+    background-color:yellow;
+}
+.button2:hover{
+    color:red;
+    background-color:yellow;
+}
+.button3:active{
+    color:red;
+    background-color:yellow;
+}
+.button4:focus{
+    color:red;
+    background-color:yellow;
+}

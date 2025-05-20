@@ -1,0 +1,58 @@
+//Variables
+$blue-color:#3498db;
+$white-color: white;
+
+
+//Header
+.main-header{
+    background-color:$blue-color;
+    
+    h1{
+        margin:0;
+        color:$white-color;
+        padding:.5em 0 0 .5em;
+    }
+    
+    .main-nav ul{
+        display:flex;
+        padding:0;
+        margin:0;
+    }
+    .main-nav li{
+        list-style:none;
+        margin:1em;
+        a{
+            color:$white-color;
+            text-decoration:none;
+            background-color:$blue-color;
+            padding:.5em;
+        }
+        a:hover{
+            color:$blue-color;
+            background-color:$white-color;
+        }
+    }
+    
+}
+
+//Main
+
+.container{
+    background-color: #f9f9f9;
+    
+    .project-card{
+    border:1px solid $blue-color;
+    border-radius:10px;
+    margin-top:1em;
+    padding:1em;
+    }
+}
+
+
+
+
+//Footer
+
+.main-footer{
+    margin-top:1em;
+}

@@ -1,0 +1,147 @@
+/* La taille */
+
+.font-size-medium {
+    font-size: medium;
+}
+.font-size-large {
+    font-size: large;
+}
+.font-size-px {
+    font-size: 14px;
+}
+.font-size-pourcent {
+    font-size: 150%;
+}
+.font-size-em {
+    font-size: 1.5em;
+}
+.font-size-rem {
+    font-size: 1.5rem;
+}
+
+/* La graisse */
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+.font-weight-bolder {
+    font-weight: bolder;
+}
+.font-weight-lighter {
+    font-weight: lighter;
+}
+
+/* Le style */
+.font-style-italic {
+    font-style:italic;
+}
+.font-style-normal {
+    font-style: normal;
+}
+
+/* La hauteur de ligne */
+.line-height-1 {
+    line-height: 1;
+}
+.line-height-1-5 {
+    line-height: 1.5;
+}
+.line-height-4 {
+    line-height: 4;
+}
+
+/* L'espacement entre les lettres */
+
+.letter-spacing {
+    letter-spacing: 0.5em;
+}
+
+/* L'espacement entre les mots */
+.word-spacing-2 {
+    word-spacing: 2em;
+}
+
+.small-paragraph {
+    width: 200px;
+    background-color: #ccc;
+}
+
+.white-space-normal {
+    white-space: normal;
+}
+.white-space-nowrap {
+    white-space: nowrap
+}
+.white-space-pre {
+    white-space: pre;
+}
+
+/* L'alignement et la justification du texte */
+
+.text-align-left {
+    text-align: left;
+}
+.text-align-right {
+    text-align: right;
+}
+.text-align-center {
+    text-align: center;
+}
+.text-align-justify {
+    text-align: justify;
+}
+
+/* L'indentation du texte */
+.text-indent {
+    text-indent: 6em;
+}
+
+/* La transformation du texte */
+
+.text-transform-none {
+    text-transform: none;
+}
+
+.text-transform-capitalize {
+    text-transform: capitalize;
+}
+
+.text-transform-uppercase {
+    text-transform: uppercase;
+}
+
+.text-transform-lowercase {
+    text-transform: lowercase;
+}
+
+/* La décoration du texte */
+
+.text-decoration-underline {
+    text-decoration: underline;
+}
+.text-decoration-none {
+    text-decoration: none;
+}
+.text-decoration-overline {
+    text-decoration: overline;
+}
+.text-decoration-colored {
+    text-decoration: underline red;
+}
+.text-decoration-double {
+    text-decoration: underline double orange;
+}
+.text-decoration-dashed {
+    text-decoration: underline dashed green;
+}
+.text-decoration-wavy {
+    text-decoration: underline wavy teal;
+}

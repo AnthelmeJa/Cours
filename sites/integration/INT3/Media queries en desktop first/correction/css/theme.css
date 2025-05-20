@@ -1,0 +1,43 @@
+/* *****************************************************************
+ MAIN
+***************************************************************** */
+.page {
+    margin: 2em;
+    background-color: #fff;
+}
+
+.page-content {
+    display: flex;
+    padding: 2rem;
+}
+
+.page-header, .page-footer {
+    padding: 2rem;
+    background-color: silver;
+    font-size: 2rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* *****************************************************************
+ VERSION TABLETTE
+***************************************************************** */
+
+@media screen and (max-width: 1200px) {
+    .page-content {
+        flex-wrap: wrap;
+    }
+    .page-content article {
+        width: 50%;
+    }
+}
+
+/* *****************************************************************
+ VERSION MOBILE
+***************************************************************** */
+
+@media screen and (max-width: 780px) {
+    .page-content article {
+        width: 100%;
+    }
+}

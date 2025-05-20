@@ -1,0 +1,28 @@
+
+
+
+
+.court th,
+.court td{
+    border:solid 0.1px grey;
+}
+
+.grand table{
+    border-collapse:collapse;
+    width:100%;
+}
+.grand th,
+.grand td{
+    border:solid 0.1px rgba(4, 4, 4, .1);
+    padding:1em;
+}
+
+#total{
+    text-align:right;
+    padding-right:1em;
+}
+.grand tbody tr:nth-child(odd){
+    background-color :rgba(4, 4, 4, .1);
+    
+}
+

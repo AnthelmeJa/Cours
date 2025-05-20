@@ -1,0 +1,11 @@
+.center{
+    display:flex;
+    justify-content:center;
+}
+.rotate{
+    transform: rotate(90deg);
+    transition:.7s;
+}
+.rotate:hover{
+    transform: rotate(0deg);
+}

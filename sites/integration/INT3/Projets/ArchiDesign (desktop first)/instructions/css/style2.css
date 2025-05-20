@@ -1,0 +1,45 @@
+h1{
+    color:#CB8606;
+}
+.bleu{
+    color:#00748D;    
+
+}
+h2{
+    color:#00748D;
+    white-space:nowrap;
+}
+
+
+
+section img{
+    width:45%;
+    margin-right:2rem;
+}
+
+footer{
+    margin-top:3rem;
+}
+
+.aside{
+    width :100%;
+}
+
+aside p{
+    font-size:1.6rem;
+}
+
+
+aside img{
+  
+  margin-right:1rem;
+}
+
+.borderBot{
+    border-bottom:solid 1px #CB8606;
+    
+}
+.scroll{
+    overflow-y:scroll;
+    height:60rem;
+}

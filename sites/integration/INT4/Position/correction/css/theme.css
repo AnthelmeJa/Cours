@@ -1,0 +1,41 @@
+article{
+  margin-bottom:3rem;
+}
+
+.sticky{
+    background-color:#f9c;
+    position: sticky;
+    top:0;
+}
+
+.static{
+    background-color:#9c6;
+    position: static;
+}
+
+.relative{
+    background-color:#fc3;
+    position: relative;
+    right:5em;
+}
+
+.relative2{
+    position: relative;
+}
+
+.absolute{
+    background-color:#f93;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.fixed{
+    background-color:#69c;
+    position: fixed;
+    top:0;
+    right:0;
+    width:40%;
+    height:500px;
+}
+

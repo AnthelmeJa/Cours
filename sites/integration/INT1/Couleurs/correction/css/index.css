@@ -1,0 +1,71 @@
+.txt-orange {
+    color: orange;
+}
+
+.txt-hexa1 {
+    color: #d23100;
+}
+
+.txt-hexa2 {
+    color: #34e;/* Equivaut à #3344ee */
+}
+
+.txt-rgb {
+    color: rgb(120, 0, 120);
+}
+
+.txt-hsl {
+    color: hsl(315, 73.3%, 47%);
+}
+
+.bgc {
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.bgc strong {
+    background-color: #FF0000;
+}
+
+.rgba {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.hsla {
+    background-color: hsla(0, 100%, 50%, 0.5);
+}
+
+.opacity {
+    background-color: #FF0000;
+    opacity: 0.5;
+}
+
+/* R, G, B : 0 à 255 pour chaque composante */
+/*
+
+Base 16 : 0-F
+
+Base 10 : 0-9
+
+Base 2 : 0-1
+
+Nombre 15
+- Base 10 : 1 5
+- Base 2 : 1 1 1 1
+2^3 2^2 2^1 2^0
+1*8 + 1*4 + 1*2 + 1*1 = 15
+
+Nombre 10
+- Base 10 : 1 0
+- Base 2 : 1 0 1 0
+
+2^3 2^2 2^1 2^0
+1*8 + 0*4 + 1*2 + 0*1 = 10
+
+Nombre 15
+- Base 16 : E
+
+Nombre 10
+- Base 16 : A
+
+*/

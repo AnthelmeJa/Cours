@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<script type="text/javascript" src="js/evenement.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=VT323&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="scanline"></div>
+		<div class="static-overlay"></div>
+			<div class="retro-screen">
+		  <p>> Initializing system...</p>
+		  <p>> Boot sequence: OK</p>
+		  <p>> Loading VHS glitch module...</p>
+		</div>
+		<header>
+			<div class="header1">
+				<img class="logo" id="logo" src="images/logo1.png" alt="Logo" class="logo">
+				<h1>FUTURE CITY</h1>
+				<nav>
+					<ul class="navbar">
+						<li><a href="home.html">Home</a></li>
+						<li><a href="Evenement.html">Evenements</a></li>
+						<li><a href="billeterie.html">Billetterie</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="container">
+			<div class="bg-event col">
+				<h2>Evenements a venir</h2>
+				<a href="#filter">
+					<div class="scroll-down">
+  						<span class="arrow"></span>
+					</div>
+				</a>
+				<a href="#filter">
+					<div class="scroll-down arrow1">
+  						<span class="arrow"></span>
+					</div>
+				</a>
+				<a href="#filter">
+					<div class="scroll-down arrow2">
+  						<span class="arrow"></span>
+					</div>
+				</a>
+			    <div class="filter">
+	    		    <button onclick="filterDivs('all')" id="filter">Tout</button>
+	    		    <button onclick="filterDivs('rock')">Rock</button>
+	    		    <button onclick="filterDivs('jazz')">Jazz</button>
+	    		    <button onclick="filterDivs('event')">Event</button>
+			    </div>
+			    <section class="card-grid">
+					<div class="card jazz">
+					    <img src="images/jazz.png" alt="Concert 1"/>
+					    <h3>Luminal Forest</h3>
+					    <button>voir plus</button>
+					</div>
+	  				<div class="card jazz">
+	    				<img src="images/jazz3.png" alt="Concert 2"/>
+					    <h3>Tom Hardisque</h3>
+					    <button>voir plus</button>
+	  				</div>
+	  				<div class="card rock">
+	    				<img src="images/rock1.jpg" alt="Concert 2"/>
+					    <h3>Pink Whave</h3>
+					    <button>voir plus</button>
+	  				</div>
+	  				<div class="card rock">
+	    				<img src="images/rock2.jpg" alt="Concert 2"/>
+					    <h3>Néon Désir</h3>
+					    <button>voir plus</button>
+	  				</div>
+	  				<div class="card event">
+	    				<img src="images/lapin.png" alt="Concert 2"/>
+					    <h3>Easter Glitch</h3>
+					    <button>voir plus</button>
+	  				</div>
+	  				<div class="card rock">
+	    				<img src="images/rock3.jpg" alt="Concert 2" />
+					    <h3>Hotline Breizh</h3>
+					    <button>voir plus</button>
+	  				</div>
+	  				<div class="card event">
+	    				<img src="images/noel2.png" alt="Concert 2"/>
+					    <h3>Cyber christmas</h3>
+					    <button>voir plus</button>
+	  				</div>
+	  				<div class="card event">
+	    				<img src="images/halloween.png" alt="Concert 2" />
+					    <h3>Pixel Halloween</h3>
+					    <button>voir plus</button>
+	  				</div>
+				</section>
+			</div>
+		    
+		</main>
+		<footer class="footer">
+    
+    <div class="footer2"> 
+    <div class="footer-section">
+        <h3 class="neon-text">Contact</h3>
+        <ul>
+
+          <li class="neon-text">✉ contact@neonville.future</li>
+          <li class="neon-text">📠 Fax hors service depuis 2077</li>
+          <li class="neon-text">📍 Rennes, France</li>
+          <li class="neon-text">🏙 4 Rue des Châteaux du Futur</li>
+        </ul>
+      </div>
+
+     <div class="footer-section">
+        <div class="footer-text">
+        <p> Welcome to the neon heart of the future, where dreams of the 80s come true. The city was founded in 2084 by a group of cyber-romantics tired of boring reality.</p>
+    </div>
+     </div>
+
+      <div class="footer-section">
+        <h3 class="neon-text">Coordonnées (fictives)</h3>
+        <ul>
+          <li class="neon-text">📡 Latitude : 47.1984° N</li>
+          <li class="neon-text">🛰 Longitude : -1.3085° W</li>
+          <li class="neon-text flicker">💡 Ne débranchez jamais le néon</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+	  <!-- MUSIC MUSIC MUSIC MUSIC MUSIC MUSIC MUSIC MUSIC-->
+	<audio id="music" autoplay loop>
+	    <source src="music/Timecop1983 - On the Run.mp3" type="audio/mpeg">
+	</audio>
+	
+	<script>
+	    const audio = document.getElementById("music");
+	    const toggleBtn = document.getElementById("logo");
+	
+	    audio.volume = 0.1;
+	
+	    toggleBtn.addEventListener("click", function () {
+	        if (audio.paused) {
+	            audio.play().catch(e => console.log("ERROR", e));
+	        } else {
+	            audio.pause();
+	        }
+	    });
+	</script>
+	</body>
+</html>

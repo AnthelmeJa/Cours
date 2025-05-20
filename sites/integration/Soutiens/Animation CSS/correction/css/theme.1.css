@@ -1,0 +1,59 @@
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  position: relative; /* Pour positionner les cercles en absolu par rapport à ce conteneur */
+  width: 10rem;
+  height: 10rem;
+}
+
+.cercle {
+  background-color: #EEEEEE;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  position: absolute; /* Superposition */
+  top: 0;
+  left: 0;
+  animation: cercle 10s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue {
+  border: 1px solid blue;
+  animation-delay: 0s;
+  z-index: 1;
+}
+
+.yellow {
+  border: 1px solid yellow;
+  animation-delay: 0.5s;
+  z-index: 2;
+}
+
+.red {
+  border: 1px solid red;
+  animation-delay: 1s;
+  z-index: 3;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animation */
+@keyframes cercle {
+  0%, 100% {
+    transform: translate(0,0,0,0);
+    
+  }
+  50% {
+    transform: translate(2rem,2rem);
+  }
+}

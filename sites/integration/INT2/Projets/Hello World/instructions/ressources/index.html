@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Réservation Voyage">
+		<title>Hello World</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/59f1bc3fbe.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header class="flexCol center">
+			<img src="img/logo.png" alt="logo de hello-world">
+			</img>
+			<nav>
+				<ul class="flexRow center space-around">
+					<li><a href="#carnets">Carnets de voyage</a></li>
+					<li><a href="#quand">Quand partir ?</a></li>
+					<li><a href="#about">A propos</a></li>
+					<li><a href="#contact">Me contacter</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="titre1">
+				<h1 class="flexRow center space-around" id="carnets">Carnets de voyage</h1>
+			</div>
+			<section class="section1 container flexCol center">
+				<h2>Mes derniers Voyages</h2>
+				<article>
+					<h3>Viennes,Autriche</h3>
+					<div class="article">
+						<img src="img/vienne.jpg" alt="Vienne Autriche">
+						<div>
+							<p>
+								Vienne est un mélange d’architecture fastueuse, demusique et de 
+								charme pittoresque.
+							</p>
+							<p>
+								Semblable à nulle autre, 
+								<strong>Vienne</strong>
+								préserve intact son aspect historique d’originemarqué par des 
+								édifices fastueux datant de l’époquebaroque et des débuts du XXème siècle.
+							</p>
+							<p>
+								La moitié de la ville est située sur le Danube etoffre des parcs,
+								la forêt viennoise etmême des zones viticoles pour les loisirs.
+							</p>
+							<button href="">En savoir plus</button>
+						</div>
+					</div>
+				</article>
+				<article>
+					<h3>Marrakech,Maroc</h3>
+					<div class="article">
+						<div>
+							<p>
+								Marrakech, est une ville située dans le centre duMaroc au pied 
+								des montagnes de l'Atlas. <strong>Marrakech</strong> est surnommée <span id="red">« la ville rouge »</span>
+								ou la <span id="or">« ville ocre »</span> en référence à la couleurrouge d'une grande partie
+								de ses immeubles et ses maisons.
+							</p>
+							<p>
+								Marrakech est une ville unique en son genre qui sedistingue totalement
+								du reste. VisiterMarrakech est une expérience qui stimulera tous 
+								vossens : ses couleurs, ses saveurs et sesodeurs vous marqueront 
+								dès votre arrivée et vousaccompagneront des semaines après votre retour.
+							</p>
+							<button>En savoir plus</button>
+						</div>
+						<img src="img/marrakech.jpg" alt="Marrakech, Maroc">
+					</div>
+				</article>
+			</section>
+			<section class="container flexCol center">
+				<h2 id="quand">Les meilleures saisons pour voyager</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>
+								Ville
+							</th>
+							<th>
+								Pays
+							</th>
+							<th colspan="5">
+								Périodes
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								Bali
+							</td>
+							<td>
+								Indonésie
+							</td>
+							<td colspan="5">
+								juin à septembre
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Marrakech
+							</td>
+							<td>
+								Maroc
+							</td>
+							<td colspan="5">
+								mars à juin, septembre à novembre
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Miami
+							</td>
+							<td>
+								USA
+							</td>
+							<td colspan="5">
+								janvier à avril, novembre et décembre
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Viene
+							</td>
+							<td>
+								Autriche
+							</td>
+							<td colspan="5">
+								juin à septembre
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Sydney
+							</td>
+							<td>
+								Australie
+							</td>
+							<td colspan="5">
+								mars à mai, septembre et octobre
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<div class="aboutSection">
+				<article class="aboutArticle  container flexCol center">
+					<h2 id="about">A propos</h2>
+					<p>
+						Je m'appelle Claire et j'aime les 
+						<strong>voyages</strong>
+						 et l'
+						<strong>aventure</strong>
+						.
+					</p>
+					<p>
+						C'est suite à un long 
+						<strong>tour du monde</strong>
+						 que j'ai changé de vie etque j'ai décidé de créer ce blog pour vous aider à voyager.
+					</p>
+					<p>
+						Ma passion pour le voyage est désormais devenu mon métier.
+					</p>
+					<p>
+						Vous pourrez trouver ici de l'inspiration et de nombreux conseilspour 
+						<strong>réduire votre budget voyages</strong>
+						 et pouvoir partir plus souvent.
+					</p>
+				</article>
+			</div>
+			<section class="container flexCol center contact">
+				<h2 id="contact">Me contacter</h2>
+				<div class="contactInfo flexCol">
+					<div class="flexRow">
+						<i class="fa-solid fa-location-dot" style="color: #444444;"></i>
+						<p>
+							31 Rue d'Auteuil, Paris 16
+							<sup>
+								ème
+							</sup>
+						</p>
+					</div>
+					<div>
+						<i class="fa-solid fa-envelope" style="color: #444444;"></i>
+						<a href="">claire@helloworld.com</a>
+					</div>
+					<div class="flexRow">
+						<i class="fa-solid fa-phone" style="color: #444444;"></i>
+						<p>
+							06 01 03 05 07
+						</p>
+					</div>
+				</div>
+				<h3>Formulaire de contact</h3>
+				<form method="Post" class="fondForm flexCol">
+					<div class="flexRow space-around">
+						<fieldset class="flexCol">
+							<div class="field">
+								<input type="text" id="lasttName" placeholder="Votre nom" />
+							</div>
+							<div class="field">
+								<input type="email" id="firstName" placeholder="Votre email" />
+							</div>
+							<div class="field">
+								<input type="tel" id="tel"  placeholder="Votre numéro de téléphone"/>
+							</div>
+						</fieldset>
+						<fieldset class="flexCol">
+							<div class="field">
+								<textarea placeholder="Votre message"></textarea>
+							</div>
+						</fieldset>
+					</div>
+					<div class="flexRow space-around">
+						<button class="contactButton">Envoyer</button>
+					</div>
+				</form>
+				<p id="follow">
+					Suivez-mois sur:
+				</p>
+				<div>
+					<i class="fa-brands fa-square-facebook fa-2xl" style="color:#4267B2;"></i>
+					<i class="fa-brands fa-square-twitter fa-2xl" style="color: #74C0FC;"></i>
+					<i class="fa-brands fa-square-pinterest fa-2xl" style="color: #b81414;"></i>
+					<i class="fa-brands fa-square-instagram fa-2xl" style="color: #fec3e5;"></i>
+				</div>
+			</section>
+		</main>
+		<footer class="footer flexCol">
+			<p>
+				<a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="images/logo-3wa.png"></a>
+			</p>
+			<p>
+				Ce matériel pédagogique est la propriété de la 
+				<a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>
+				. Cet exercice a été réalisé par Stephane Pereck.
+			</p>
+		</footer>
+	</body>
+</html>

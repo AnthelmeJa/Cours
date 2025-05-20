@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 20%;
+  font-style: Segoe, sans-serif;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.main-header {
+  background-color: #3498db;
+}
+.main-header h1 {
+  margin: 0;
+  color: white;
+  padding: 0.5em 0 0 0.5em;
+}
+.main-header .main-nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.main-header .main-nav li {
+  list-style: none;
+  margin: 1em;
+}
+.main-header .main-nav li a {
+  color: white;
+  text-decoration: none;
+  background-color: #3498db;
+  padding: 0.5em;
+}
+.main-header .main-nav li a:hover {
+  color: #3498db;
+  background-color: white;
+}
+
+.container {
+  background-color: #f9f9f9;
+}
+.container .project-card {
+  border: 1px solid #3498db;
+  border-radius: 10px;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.main-footer {
+  margin-top: 1em;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project .test {
+  display: flex;
+  flex-direction: row;
+}
+.project article {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 1em;
+  border: 1px solid #3498db;
+  border-radius: 10px;
+  padding: 1em;
+  width: 49%;
+}
+
+@media (max-width: 780px) {
+  .project .test {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 780px) {
+  .test {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

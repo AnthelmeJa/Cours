@@ -1,0 +1,44 @@
+// Un commentaire en SASS
+
+// Déclaration des variables
+$base-color: #369;
+$title-1-color: #c33;
+
+// Utilisation des fonctions prédéfinies
+$title-2-color: darken($title-1-color, 10%);
+$title-3-color: darken($title-1-color, 20%);
+
+.main {
+    color: $base-color;
+}
+
+.main h1 {
+    color: $title-1-color;
+}
+
+// Imbrication
+.imbrication {
+    h2 {
+        color: $title-2-color;
+    }
+    
+    section {
+        border: 1px solid $title-3-color;
+        padding: 1em;
+        
+        h3 {
+            color: $title-3-color;
+        }
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@for $i from 2 to 6 {
+    .cols-#{$i} > * {
+        width: calc(100% / $i - 1%);
+    }
+}

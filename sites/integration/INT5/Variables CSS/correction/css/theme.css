@@ -1,0 +1,32 @@
+/* *****************************************************************
+ DECLARATION DES VARIABLES
+***************************************************************** */
+:root {
+    --txtcolor: #444;
+    --orange: #DD5735;
+    --white: white;
+    --oui: 1.5rem;
+    --arial:arial, sans-serif;
+    --txtSize:1.5rem;
+    --txt:bold;
+    --font-size:20px;
+}
+
+/* *****************************************************************
+ MAIN
+***************************************************************** */
+
+.demo h2 {
+    color: var(--txtcolor);
+    font-weight:var(--txt);
+    font-size:var(--font-size);
+}
+.btn {
+  font-family:var(--arial);
+    color: var(--white);
+    background-color:var(--orange);
+    padding:var(--oui);
+    font-size:var(--txtSize);
+    font-weight:bold;
+}
+

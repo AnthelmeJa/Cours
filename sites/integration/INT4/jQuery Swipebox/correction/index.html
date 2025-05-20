@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Utilisation de jQuery">
+	<title>jQuery</title>
+	<link rel="stylesheet" href="css/common-v3.css">
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="src/css/swipebox.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<h1>jQuery</h1>
+		<p>Utilisation de jQuery</p>
+	</header>
+
+	<main class="container">
+	
+		
+		<article>
+			<h2>Swipe Box</h2>
+			<div class="grid">
+				<a href="images/abstract1-grand.jpg" class="swipebox" title="My Caption"><img src="images/abstract1-vignette.jpg" alt=""></a>
+				<a href="images/abstract2-grand.jpg" class="swipebox" title="My Caption"><img src="images/abstract2-vignette.jpg" alt=""></a>
+				<a href="images/nature1-grand.jpg" class="swipebox" title="My Caption"><img src="images/nature1-vignette.jpg" alt=""></a>
+				<a href="images/nature2-grand.jpg" class="swipebox" title="My Caption"><img src="images/nature2-vignette.jpg" alt=""></a>
+				<a href="images/nature3-grand.jpg" class="swipebox" title="My Caption"><img src="images/nature3-vignette.jpg" alt=""></a>
+				<a href="images/tech1-grand.jpg" class="swipebox" title="My Caption"><img src="images/tech1-vignette.jpg" alt=""></a>
+				<a href="images/tech2-grand.jpg" class="swipebox" title="My Caption"><img src="images/tech2-vignette.jpg" alt=""></a>
+				<a href="images/tech3-grand.jpg" class="swipebox" title="My Caption"><img src="images/tech3-vignette.jpg" alt=""></a>
+			</div>
+		</article>
+
+	</main>
+
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="images/logo-3wa.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+	<script src="src/js/jquery.swipebox.js"></script>
+	<script type="text/javascript">
+;( function( $ ) {
+
+	$( '.swipebox' ).swipebox();
+
+} )( jQuery );
+</script>
+	
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+
+//Généralité
+body{
+    margin:0;
+}
+
+
+//main
+.container{
+    display:flex;
+    flex-direction:column;
+    max-width:1200px;
+    margin:0 20%;
+    font-style:Segoe,sans-serif;
+}
+
+//Footer
+
+.main-footer{
+    display:flex;
+    justify-content:center;
+}

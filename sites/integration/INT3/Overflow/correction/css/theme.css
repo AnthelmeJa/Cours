@@ -1,0 +1,47 @@
+/* *****************************************************************
+ MAIN
+***************************************************************** */
+.container {
+    max-width: 600px;
+}
+
+.card {
+    max-height: 120px;
+    margin-bottom: 120px;
+}
+
+.visible {
+    overflow: visible; /* Default value */
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.scroll {
+    overflow: scroll;/* Affiche systématiquement les scroll bar */
+}
+
+.auto {
+    overflow: auto;/* Affiche les scroll bar uniquement si nécéssaire */
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.else {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: " [...]";
+}
+
+.note {
+	display: block;
+	text-align: center;
+	font-size: 1rem;
+	font-style: italic;
+}
+

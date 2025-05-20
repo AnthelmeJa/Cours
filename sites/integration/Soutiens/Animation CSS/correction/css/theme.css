@@ -1,0 +1,48 @@
+html{
+    font-size:62.5%;
+}
+
+
+.red{
+    background-color:red;
+    width:10rem;
+    height:10rem;
+}
+
+
+.flexRow{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center
+}
+
+
+
+
+@keyframes pulseHeight {
+  0%, 100% {
+    height: 5rem;
+  }
+  50% {
+    height: 7rem;
+  }
+}
+
+.red .white {
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem;
+  background-color: white;
+  animation: pulseHeight 2s ease-in-out infinite;
+}
+
+.red .white:nth-child(1) {
+  animation-delay: 0s;
+}
+.red .white:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.red .white:nth-child(3) {
+  animation-delay: 1s;
+}

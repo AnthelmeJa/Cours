@@ -1,0 +1,29 @@
+📁 Contenu du dossier
+- index.html : structure HTML du mini-portfolio
+- scss/_variables.scss : couleurs, polices, espacements (margin / padding)
+- scss/_base.scss : styles globaux du projet
+- scss/style.scss : fichier principal qui importe les autres
+- css/ : contiendra le css généré par l'outil de compilation SASS. Aucun code manuel ne doit s'y trouver.
+
+🔎 Spécificités
+- Couleur principale (ex : header, boutons) : #3498db
+- Couleur secondaire (ex : hover) : #2ecc71
+- Couleur du texte principal : #333333
+- Couleur du texte secondaire : white
+- Couleur fond de la page : #f9f9f9
+- Police par défaut : Segoe UI (sans-serif)
+- Unité d'espacement utilisée pour margin/padding : 1em
+- Largeur maximale du contenu : 1200px
+
+✅ Critères de réussite
+- Utilisation de variables dans un fichier dédié
+- Code structuré avec les imbrications (nesting)
+- Le fichier final CSS est compilé et fonctionnel
+- Le code SASS est lisible, propre, et cohérent
+
+🎯 Bonus
+- Ajouter une page Projets avec 4 articles (mettre du lorem à l'intérieur)
+- Ajouter une version desktop avec comme point de rupture 1200px
+-> Les 4 articles de la page projets sont affichés sur deux colonnes.
+-> Les 2 projets de la page d'accueil sont affichés sur deux colonnes.
+- Ajouter une page Contact avec un formulaire (nom, prénom, email, adresse, téléphone, message).

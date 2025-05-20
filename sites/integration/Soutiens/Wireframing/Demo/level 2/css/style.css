@@ -1,0 +1,60 @@
+/******************************************************************************/
+/*                               Généralités                                  */
+/******************************************************************************/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+/******************************************************************************/
+/*                                  Layout                                    */
+/******************************************************************************/
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    border: 1px solid black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.extra-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: purple;
+    border: 1px solid black;
+}
+
+/******************************************************************************/
+/*                               Wireframing                                  */
+/******************************************************************************/
+div, nav, section {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    margin: 0.1em;
+}

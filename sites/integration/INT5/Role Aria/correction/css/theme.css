@@ -1,0 +1,102 @@
+h2 {
+	margin: 0;
+}
+
+/* le menu */
+.nav-access {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nav-access a {
+    position: absolute;
+    display: block;
+    padding: 1em;
+    white-space: nowrap;
+    color: white;
+    background-color: black;
+    opacity: 0;
+}
+
+.nav-access a:focus {
+    opacity: 1;
+}
+
+.container nav {
+	background-color: #eee;
+	padding: .5em;
+    margin-bottom: 2rem;
+}
+
+.container nav ul {
+    list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.container nav a {
+    text-decoration: none;
+    color: #dd5735;
+    display: inline-block;
+    padding: 1em;
+}
+
+
+/* formulaires  */
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+input {
+  padding: .5em;
+}
+
+#recherche {
+  flex-grow: 2;
+}
+
+#recherche label {
+  display: block;
+}
+
+#connexion {
+  flex-grow: 3;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#connexion div {
+  margin-right: 1.5rem;
+}
+
+#connexion div{
+  display: flex;
+  align-items: center;
+}
+
+#connexion label {
+  margin-right: .5rem;
+}
+
+#connexion p {
+  margin-bottom: 0;
+}
+
+/* Réseaux sociaux  */
+
+.rs {
+	margin: 3rem 0;
+	text-align: center;
+}
+
+.rs a {
+    text-decoration: none;
+    margin: 0 1rem;
+    color: #dd5735;
+    font-size: 4rem;
+}
