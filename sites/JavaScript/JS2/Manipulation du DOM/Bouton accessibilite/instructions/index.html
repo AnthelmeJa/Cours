@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site web accessible</title>
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="accessibility-toolbar">
+    <label for="lightDarkSwitchInput" class="switch light-dark-switch">
+      <input type="checkbox" id="lightDarkSwitchInput" @change=switchLightDark v-model="isDarkMode" />
+      <div class="button"></div>
+    </label>
+    <label for="dysSwitchInput" class="switch dys-switch">
+      <input type="checkbox" id="dysSwitchInput" @change=switchDys v-model="isDysEnabled" />
+      <div class="button"></div>
+    </label>
+    <label for="bigFontSwitchInput" class="switch big-font-switch">
+      <input type="checkbox" id="bigFontSwitchInput" @change=switchBigFont v-model="isBigFont" />
+      <div class="button"></div>
+    </label>
+  </div>
+  <header class="main-header" role="banner">
+    <div class="container">
+      <div>
+        <img src="img/logo.png" alt="Bonhomme blanc sur fond bleu avec écrit accessibilité numérique" class="logo" />
+      </div>
+      <div>
+        <h1>Site web accessible</h1>
+        <p>Parce que chacun doit pouvoir utiliser internet</p>
+      </div>
+    </div>
+  </header>
+  <main class="page container">
+    <section>
+      <h2>Introduction</h2>
+      <p>L’accessibilité numérique vise à rendre les contenus web utilisables par tous, y compris les personnes en situation de handicap. C’est un droit fondamental et un enjeu d’inclusion essentiel dans nos sociétés de plus en plus numériques.</p>
+    </section>
+
+    <section>
+      <h2>Types de handicaps concernés</h2>
+
+      <div class="card-container">
+        <article class="card">
+          <h3>Handicaps visuels</h3>
+          <p>Les personnes aveugles ou malvoyantes utilisent des lecteurs d’écran ou des systèmes de grossissement. Les contrastes insuffisants, les images sans descriptions et les interfaces non compatibles posent problème.</p>  
+        </article>
+  
+        <article class="card">
+          <h3>Handicaps auditifs</h3>
+          <p>Les utilisateurs sourds ou malentendants peuvent avoir besoin de sous-titres ou de transcriptions pour accéder aux vidéos ou contenus audio. Les systèmes d'alerte uniquement sonores peuvent être exclusifs.</p>
+        </article>
+  
+        <article class="card">
+          <h3>Handicaps moteurs</h3>
+          <p>Des limitations motrices peuvent rendre difficile l’utilisation d’une souris. La navigation au clavier ou via des aides techniques (joysticks, commandes vocales) est donc essentielle.</p>
+        </article>
+  
+        <article class="card">
+          <h3>Handicaps cognitifs</h3>
+          <p>Les personnes avec troubles de l’attention, dyslexie ou troubles du développement bénéficient de contenus clairs, structurés, sans surcharge d’informations et avec une navigation intuitive.</p>
+        </article>  
+      </div>
+    </section>
+
+    <section>
+      <h2>Obstacles courants</h2>
+      <ul>
+        <li>Contraste de couleurs insuffisant</li>
+        <li>Absence de texte alternatif sur les images</li>
+        <li>Navigation inaccessible sans souris</li>
+        <li>Manque de sous-titrage pour les contenus multimédias</li>
+        <li>Structure HTML non sémantique</li>
+        <li>Contenus trop complexes ou désorganisés</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Bonnes pratiques</h2>
+      <ul>
+        <li>Ajouter des descriptions textuelles aux images (attribut alt)</li>
+        <li>Utiliser un contraste suffisant entre texte et fond</li>
+        <li>Permettre la navigation au clavier</li>
+        <li>Utiliser des balises sémantiques (header, nav, main, footer, etc.)</li>
+        <li>Sous-titrer les vidéos et fournir des transcriptions</li>
+        <li>Structurer les pages avec des titres clairs et hiérarchisés</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Conclusion</h2>
+      <p>Rendre le web accessible, c’est le rendre plus juste, plus humain et plus universel. Contribuons ensemble à bâtir un Internet inclusif, au service de toutes et tous.</p>
+    </section>
+  </main>
+  <footer class="main-footer" role="contentinfo">
+    <div class="container">
+      &copy; Nevezide 2025
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+</html>

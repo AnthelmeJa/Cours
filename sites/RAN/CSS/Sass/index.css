@@ -1,0 +1,194 @@
+body{
+    margin-left: 0;
+}
+
+
+header div{
+    display: flex;
+    flex-direction:row;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height:62px;
+    gap: 25px;
+    
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    margin-top: 0;
+    gap: 50px;
+    list-style-type: none;
+    z-index:2;
+}
+
+.menu-principale{
+    display: inline-block;
+    position: relative;
+}
+
+ .menu-principal:hover .sous-menu {
+    display: block;
+}
+
+.sous-menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    margin-top: 25px;
+    right: 125px;
+  }
+#blanc li{
+    background-color: white;
+    border-radius: 25px;
+}
+
+#blan{
+    border-radius: 25px;
+}
+#blanc .sous-menu{
+    right: 0;
+    
+}
+#blanc button{
+    border-radius: 25px;
+}
+
+  
+.menu-principal li {
+    display: block;
+    background-color: gray;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+  }
+
+
+
+  
+.sous-menu li:hover {
+    background-color: rgb(54, 54, 54);
+  }
+
+
+header img{
+    height: 55px;
+}
+
+
+h1{
+    margin:0;
+    padding-top: 9px;
+}
+.menu{
+    justify-content: flex-start;
+    background-color: gray;
+}
+.header{
+    justify-content: flex-end;
+}
+
+
+p{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+ footer{
+    background-color: black;
+    position:fixed;
+    width: 100%;
+    color: white;
+    bottom: 0;
+    left: 0;
+ }
+ 
+ footer p{
+     text-align:center;
+ }
+ .popup{
+    position: fixed;
+    background-color: greenyellow;
+    top: 55px;
+    right: 0;
+    margin: 10px;
+    z-index: 1;
+ }
+.barremenu{
+background-color: #9b9b9b;
+width:10%;
+display: flex;
+flex-direction: column;
+max-height:100%;
+text-align: center;
+margin-top: 50px;
+padding-bottom: 100%;
+margin-left: 0;
+}
+
+.boutonmenu{
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.boutonmenu:hover{
+ background-color: #6b6969;
+}
+
+.lorem{
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    gap:10px
+}
+
+.lorem a{
+    padding-top:75px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0; right: 0;
+  bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, .7);
+  transition: all .4s;
+}
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+.modal_content {
+  border-radius: 4px;
+  position: relative;
+  width: 500px;
+  max-width: 90%;
+  max-height: 50%;
+  background: white;
+  padding: 1.5em 2em;
+  overflow-y: scroll;
+ 
+}
+
+.modal_close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: grey;
+  text-decoration: none;
+}

@@ -1,0 +1,290 @@
+/********************************************************************************/
+/*                                  Variables                                   */
+/********************************************************************************/
+:root {
+  --color-page-background: #FFF;
+  --color-text: rgb(37,37,38);
+  --color-border: #CCC;
+  --button-color-background: lightgoldenrodyellow;
+  --button-color-text: var(--color-text);
+  --button-color-border: var(--button-color-text);
+  --link-color: #2d89e5;
+  --link-visited-color: #b2b03a;
+  --panel-color-background: rgb(37,37,38);
+  --panel-color-text: lightgoldenrodyellow;
+  --panel-color-border: var(--button-color-border);
+  --font-family: 'Montserrat', sans-serif;
+  --font-size: 1em;
+  --line-height: 2em;
+  --border-radius: 0.25em;
+  --button-border: 0.1em solid var(--button-color-border);
+  --button-border-radius: var(--border-radius);
+  --container-width: 1200px;
+}
+/********************************************************************************/
+/*                            Accessibility classes                             */
+/********************************************************************************/
+
+/* These classes are added / removed by accessibility switches */
+
+.dark {
+  --color-page-background: rgb(30,30,30);
+  --color-text: #FFF;
+  --color-border: #666;
+  --button-color-background: var(--panel-color-background);
+  --button-color-text: lightgoldenrodyellow;
+  --button-color-border: var(--button-color-text);
+  --link-color: #66d9ef;
+  --link-visited-color: #e6db74;
+  --panel-color-border: var(--button-color-border);
+  --button-border: 0.1em solid var(--button-color-border);
+}
+
+.dys {
+  --font-family: 'OpenDyslexic', cursive;
+}
+
+.bigFont {
+  --font-size: 1.5rem;
+}
+
+/********************************************************************************/
+/*                                  Globals                                     */
+/********************************************************************************/
+
+* {
+  box-sizing: border-box
+}
+  
+::-webkit-scrollbar {
+  width: 1em;
+  height: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 1em;
+  box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(21, 21, 21);
+  border-radius: 1em;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-page-background);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+button, input[type], label {
+  background-color: var(--color-text);
+  color: var(--color-page-background);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--button-color-background);
+  color: var(--button-color-text);
+  border: var(--button-border);
+  border-radius: var(--button-border-radius);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--link-visited-color);
+}
+
+pre, code {
+  font-family: inherit;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+/********************************************************************************/
+/*                           Accessibility switches                             */
+/********************************************************************************/
+
+.accessibility-toolbar {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  height: 1.5em;
+  width: 3em;
+  background-color: var(--color-text);
+  color: var(--color-page-background);
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.switch::before {
+  display: block;
+  position: absolute;
+  font-family: cursive;
+}
+
+.switch::after {
+  display: block;
+  position: absolute;
+  font-family: cursive;
+}
+
+.switch input {
+  visibility: hidden;
+}
+
+.switch .button {
+  position: absolute;
+  top: 0.1em;
+  left: 0.1em;
+  display: block;
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 50%;
+  background-color: var(--color-page-background);
+  transition: left 0.5s ease;
+}
+
+.switch input:checked + .button {
+  left: calc(3em - 0.1em - 1.3em);
+}
+/************************** Light / Dark Switch **************************/
+
+.light-dark-switch::before {
+  top: -0.27em;
+  left: 0.15em;
+  font-size: 1.2em;
+  content: '☼';
+}
+
+.light-dark-switch::after {
+  top: -0.25em;
+  left: 1.4em;
+  font-size: 1.3em;
+  content: '☾';
+}
+/************************** Dyslexic Switch **************************/
+
+.dys-switch::before {
+  top: -0.2em;
+  left: 0.22em;
+  font-size: 1.3em;
+  content: 'A';
+  font-family: serif;
+}
+
+.dys-switch::after {
+  top: -0.25em;
+  left: 1.35em;
+  font-size: 1.3em;
+  content: 'A';
+}
+/************************** Font size switch **************************/
+
+.big-font-switch::before {
+  top: -0.4em;
+  left: 0.4em;
+  font-size: 0.7em;
+  content: 'A-';
+}
+
+.big-font-switch::after {
+  top: -0.27em;
+  left: 1.7em;
+  font-size: 1em;
+  content: 'A+';
+}
+
+/********************************************************************************/
+/*                                   Layout                                     */
+/********************************************************************************/
+.container {
+  max-width: var(--container-width);
+  margin: auto;
+}
+
+.page {
+  padding: 2em;
+}
+.page > * {
+  margin: 3em 0;
+}
+
+/********************************************************************************/
+/*                                   Cards                                      */
+/********************************************************************************/
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 3em;
+}
+
+.card {
+  padding: 1em;
+  width: calc(50% - 1em);
+  border: 1px solid var(--panel-color-border);
+  background-color: var(--panel-color-background);
+  border-radius: var(--border-radius);
+  color: var(--panel-color-text);
+}
+
+/********************************************************************************/
+/*                                   Header                                     */
+/********************************************************************************/
+
+.main-header {
+  width: 100%;
+  background-color: var(--panel-color-background);
+  color: var(--panel-color-text);
+  border-bottom: 1px solid var(--panel-color-border);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.main-header .logo {
+  display: flex;
+  align-self: center;
+  border-radius: 50%;
+  padding: 1em;
+}
+
+.main-header .container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+/********************************************************************************/
+/*                                   Footer                                     */
+/********************************************************************************/
+
+.main-footer {
+  width: 100%;
+  padding: 1.5em;
+  background-color: var(--panel-color-background);
+  color: var(--panel-color-text);
+  border-top: 1px solid var(--panel-color-border);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  text-align: center;
+}

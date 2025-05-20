@@ -1,0 +1,41 @@
+h1{
+    color:#476fdb;
+    text-align:center;
+}
+h2{
+    text-align:center;
+}
+label{
+    color:#476fdb;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    gap: 25px;
+}
+input{
+    width:50%;
+}
+#bouton{
+    background-color:#476fdb;
+    color:white;
+    border:none;
+}
+
+div{
+    display:flex;
+    width:100%;
+    flex-direction:column;
+}
+.gauche{
+    justify-content:center
+}
+.droite{
+    background-color:#476fdb;
+    color:white;
+}
+body{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
