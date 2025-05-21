@@ -1,1 +1,1 @@
-L'ensemble des mes cours (dev web et mobile) a la 3W Academy
+All of my courses (web and mobile development) at the 3W Academy
